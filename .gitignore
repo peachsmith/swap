@@ -1,9 +1,14 @@
-swap
+# Build output
 swap.exe
-.vscode/
-.vs/
+libSwapNative.dylib
+libSwapNative.so
+SwapNative.dll
 
-# Visual Studio files and directories
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
 VisualStudio/Intermediate/
 VisualStudio/SwapNative/Intermediate/
 VisualStudio/Debug/
