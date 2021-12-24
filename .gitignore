@@ -1,0 +1,10 @@
+swap
+swap.exe
+.vscode/
+.vs/
+
+# Visual Studio files and directories
+VisualStudio/Intermediate/
+VisualStudio/SwapNative/Intermediate/
+VisualStudio/Debug/
+
