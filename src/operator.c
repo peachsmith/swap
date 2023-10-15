@@ -335,7 +335,7 @@ jep_obj *jep_add(jep_ast_node node, jep_obj *list)
 			}
 			else if (l->type == JEP_LONG)
 			{
-				long *n = malloc(sizeof(int));
+				long *n = malloc(sizeof(long));
 				*n = (*(long *)(l->val)) + (*(long *)(r->val));
 				result = jep_create_object();
 				result->val = (void *)n;
@@ -501,7 +501,7 @@ jep_obj *jep_sub(jep_ast_node node, jep_obj *list)
 		}
 		else if (l->type == JEP_LONG)
 		{
-			long *n = malloc(sizeof(int));
+			long *n = malloc(sizeof(long));
 			*n = 0 - (*(long *)(l->val));
 			result = jep_create_object();
 			result->val = (void *)n;
@@ -543,7 +543,7 @@ jep_obj *jep_sub(jep_ast_node node, jep_obj *list)
 			}
 			else if (l->type == JEP_LONG)
 			{
-				long *n = malloc(sizeof(int));
+				long *n = malloc(sizeof(long));
 				*n = (*(long *)(l->val)) - (*(long *)(r->val));
 				result = jep_create_object();
 				result->val = (void *)n;
@@ -706,7 +706,7 @@ jep_obj *jep_mul(jep_ast_node node, jep_obj *list)
 			}
 			else if (l->type == JEP_LONG)
 			{
-				long *n = malloc(sizeof(int));
+				long *n = malloc(sizeof(long));
 				*n = (*(long *)(l->val)) * (*(long *)(r->val));
 				result = jep_create_object();
 				result->val = (void *)n;
@@ -870,7 +870,7 @@ jep_obj *jep_div(jep_ast_node node, jep_obj *list)
 			}
 			else if (l->type == JEP_LONG)
 			{
-				long *n = malloc(sizeof(int));
+				long *n = malloc(sizeof(long));
 				*n = (*(long *)(l->val)) / (*(long *)(r->val));
 				result = jep_create_object();
 				result->val = (void *)n;
